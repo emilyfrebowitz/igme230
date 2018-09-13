@@ -4,8 +4,18 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.header {
+    position: relative;
+}
+
 #header img {
     box-align:left;
+}
+
+.headertext {
+    position: absolute;
+    top: 100px;
+    right: 100px;
 }
 
 #headertext {
