@@ -21,6 +21,7 @@ h1 {
     background: image('self.jpg');
     float: left;
     width: 36%;
+    height: 100%
 }
 
 .rightbackground {
