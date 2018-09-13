@@ -1,5 +1,9 @@
 /*this makes the font universal for the body Raleway*/
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
+}
+
+img {
+    float:left;
 }
