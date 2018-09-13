@@ -7,3 +7,7 @@ body {
 #header img {
     box-align:left;
 }
+
+#headertext {
+    box-align: center;
+}
