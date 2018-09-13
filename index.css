@@ -6,6 +6,10 @@ body {
 
 .header {
     position: relative;
+    float: left;
+    padding: 0px;
+    width: 699px;
+    height: 1080px;
 }
 
 #header img {
