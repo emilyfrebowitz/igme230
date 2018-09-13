@@ -7,3 +7,14 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+
+p, li {
+    font-size: 0.875em;
+    line-height:1.6;
+}
+
+.subhead {
+    font-size: 80%;
+    margin-top: 0;
+    padding-top: 0;
+}
