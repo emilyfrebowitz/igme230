@@ -5,11 +5,8 @@ body {
 }
 
 .header {
-    position: relative;
-    float: left;
-    padding: 0px;
-    width: 699px;
-    height: 1080px;
+    background-image: url('self.jpg');
+    background-repeat:no-repeat;
 }
 
 #header img {
