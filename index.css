@@ -3,6 +3,9 @@
 html, body, section, div {
     box-sizing: border-box;
     height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
 }
 
 body {
@@ -12,17 +15,52 @@ body {
 
 h1 {
     position: relative;
+    left: -50px;
+    top: 30px;
     text-align: left;
+    font-size: 47px; 
+    font-weight:800
+}
+
+h2 {
+    position: relative;
+    left: 265px;
+    top: -40px;
+    font-weight:300
+}
+
+svg {
+    position: relative;
+    left: -45px;
+    top: 2px;
 }
 
 .image {
-    background: image('self.jpg');
+    background-image: url('self.jpg');
+    padding: 0px;
     float: left;
     width: 36%;
 }
 
 .rightbackground {
-    background-color: #f1f1f1
     float: left;
     width: 64%;
+    overflow: visible;
+    height: 800px;
+}
+
+.projects{
+    font-size: 10px;
+    text-align: center;
+    padding: 50px;
+}
+
+.left {
+    float: left;
+    padding: 50px;
+}
+
+.right {
+    float: left;
+    padding: 50px;
 }
