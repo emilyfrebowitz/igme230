@@ -1,21 +1,30 @@
 /*this makes the font universal for the body Raleway*/
 
+html, body, section, div {
+    box-sizing: border-box;
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: url('self.jpg');
-    background-repeat:no-repeat;
+    text-align: left;
 }
 
-#header img {
-    box-align:left;
+h1 {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    text-align: left;
 }
 
-.header {
-    position: absolute;
-    top: 100px;
-    right: 100px;
+.image {
+    background: image('self.jpg');
+    float: left;
+    width: 50%;
 }
 
-#headertext {
-    box-align: center;
+.rightbackground {
+    background-color: #f1f1f1
+    float:left;
+    width: 50%;
 }
