@@ -2,9 +2,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-}
-
-.header {
     background-image: url('self.jpg');
     background-repeat:no-repeat;
 }
@@ -13,7 +10,7 @@ body {
     box-align:left;
 }
 
-.headertext {
+.header {
     position: absolute;
     top: 100px;
     right: 100px;
