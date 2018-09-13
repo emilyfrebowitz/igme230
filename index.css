@@ -20,11 +20,11 @@ h1 {
 .image {
     background: image('self.jpg');
     float: left;
-    width: 50%;
+    width: 36%;
 }
 
 .rightbackground {
     background-color: #f1f1f1
     float:left;
-    width: 50%;
+    width: 64%;
 }
