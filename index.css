@@ -4,6 +4,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-img {
-    float:left;
+#header img {
+    box-align:left;
 }
