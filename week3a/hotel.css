@@ -18,3 +18,9 @@ p, li {
     margin-top: 0;
     padding-top: 0;
 }
+
+h1, h2 {
+    font-family: serif;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight:
+}

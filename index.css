@@ -10,57 +10,92 @@ html, body, section, div {
 
 body {
     font-family: 'Raleway', sans-serif;
-    text-align: left;
+    text-align: left;   
 }
 
+.container{
+    display: grid;
+    grid-template-columns: repeat (10 10% [col-start]);
+    grid-template-rows: repeat(25% 200px [auto]);
+}
+
+
+.header{
+    position: fixed;
+    margin-left: 1760px;
+    margin-top:200px;
+    
+    
+    
+}
 h1 {
-    position: relative;
-    left: -50px;
-    top: 30px;
-    text-align: left;
-    font-size: 47px; 
-    font-weight:800
+    font-weight:800;
+    font-size:150px;
 }
 
 h2 {
-    position: relative;
-    left: 265px;
-    top: -40px;
-    font-weight:300
+    font-weight:300;
+    font-size:70px;
+    margin-top:-60px;
+    margin-left: 1020px;
 }
 
 svg {
-    position: relative;
-    left: -45px;
-    top: 2px;
+    position: relative;   
+    margin-top:0px;
 }
 
 .image {
-    background-image: url('self.jpg');
-    padding: 0px;
-    float: left;
-    width: 36%;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    height: 100%;
+    width: auto;
+}
+.self{
+   position:fixed;
+    height: 100%;
+    width: auto;
+    z-index: -1;
 }
 
-.rightbackground {
-    float: left;
-    width: 64%;
-    overflow: visible;
-    height: 800px;
+.rightbackground{
+    grid-column-start: 4;
+    grid-column-end: span 9;
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    
+    z-index: 1;
+    background-color: white;
 }
 
 .projects{
-    font-size: 10px;
-    text-align: center;
-    padding: 50px;
+    grid-column-start: 4;
+    grid-column-end: span 9;
+    grid-row-start: 1;
+    grid-row-end: span 3;
 }
 
 .left {
-    float: left;
-    padding: 50px;
+    grid-column-start: 5;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
 }
 
 .right {
-    float: left;
-    padding: 50px;
+    grid-column-start: 6;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: pink;
+    text-decoration: none;
 }
