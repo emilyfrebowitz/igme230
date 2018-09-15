@@ -34,16 +34,20 @@ h1 {
     font-size:50px;
 }
 
+.subhead{
+    margin-left: 350px;
+    margin-top: 0px;
+}
+
 h2 {
     font-weight:300;
     font-size:20px;
     margin-top:-60px;
-    margin-left: 1020px;
 }
 
 svg {
-    position: relative;   
-    margin-top:0px;
+    position: absolute;   
+    margin-top: 8px;
 }
 
 .image {
@@ -54,6 +58,7 @@ svg {
     height: 100%;
     width: auto;
 }
+
 .self{
    position:fixed;
     height: 100%;
@@ -73,20 +78,20 @@ svg {
 
 .projects{
     grid-column-start: 4;
-    grid-column-end: span 9;
+    grid-column-end: span end;
     grid-row-start: 1;
     grid-row-end: span 3;
 }
 
 .left {
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: span 1;
     grid-row-start: 3;
     grid-row-end: span 1;
 }
 
 .right {
-    grid-column-start: 8;
+    grid-column-start: 9;
     grid-column-end: span 1;
     grid-row-start: 3;
     grid-row-end: span 1;
