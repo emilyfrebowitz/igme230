@@ -21,9 +21,10 @@ body {
 
 
 .header{
-    position: fixed;
-    margin-left: 1760px;
-    margin-top:200px;
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    grid-row-start: 2;
+    grid-row-end: span 1;
     
     
     
@@ -78,14 +79,14 @@ svg {
 }
 
 .left {
-    grid-column-start: 5;
+    grid-column-start: 7;
     grid-column-end: span 1;
     grid-row-start: 3;
     grid-row-end: span 1;
 }
 
 .right {
-    grid-column-start: 6;
+    grid-column-start: 8;
     grid-column-end: span 1;
     grid-row-start: 3;
     grid-row-end: span 1;
