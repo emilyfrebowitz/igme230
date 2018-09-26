@@ -39,3 +39,17 @@ h3, nav a {
     width: 100%;
     display: block;
 }
+
+@media screen and (min-width: 520px) {
+
+    aside, nav {
+        float: left;
+        width: 20%;
+    }
+
+    article {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+    }
+}
