@@ -36,7 +36,9 @@
 
         for (let i = 0; i < colors.length; i++) {
             let unorderedList = document.querySelector("ol");
-            unorderedlist.appendChild(colors[i]);
+            const ele = document.createElement("li");
+            ele.innerText = colors[i];
+            unorderedlist.appendChild(ele);
         }
 
         for (let i = 0; i < foods.length; i++) {
