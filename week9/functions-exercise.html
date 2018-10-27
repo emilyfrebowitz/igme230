@@ -30,9 +30,9 @@
       </main>
     
     <script>
-        // "use strict";
-        // let colors = ["purple", "cyan", "yellow"]; // add some colors
-        // let foods = ["pesto", "eggs", "brie"]; // add some foods
+        "use strict";
+        let colors = ["purple", "cyan", "yellow"]; // add some colors
+        let foods = ["pesto", "eggs", "brie"]; // add some foods
 
         // for (let i = 0; i < colors.length; i++) {
         //     let unorderedList = document.querySelector("#colorsList");
@@ -50,7 +50,7 @@
 
         function createList(listElement, arr){
             let unorderedList = document.querySelector(listElement);
-            const ele = doument.createElement("li");
+            const ele = document.createElement("li");
             ele.innerText = arr[i];
             unorderedList.appendChild(ele);
         }
