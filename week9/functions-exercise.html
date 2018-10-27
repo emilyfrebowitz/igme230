@@ -30,23 +30,33 @@
       </main>
     
     <script>
-        "use strict";
-        let colors = ["purple", "cyan", "yellow"]; // add some colors
-        let foods = ["pesto", "eggs", "brie"]; // add some foods
+        // "use strict";
+        // let colors = ["purple", "cyan", "yellow"]; // add some colors
+        // let foods = ["pesto", "eggs", "brie"]; // add some foods
 
-        for (let i = 0; i < colors.length; i++) {
-            let unorderedList = document.querySelector("#colorsList");
-            const ele = document.createElement("li");
-            ele.innerText = colors[i];
+        // for (let i = 0; i < colors.length; i++) {
+        //     let unorderedList = document.querySelector("#colorsList");
+        //     const ele = document.createElement("li");
+        //     ele.innerText = colors[i];
+        //     unorderedList.appendChild(ele);
+        // }
+
+        // for (let i = 0; i < foods.length; i++) {
+        //     let unorderedList = document.querySelector("#foodsList");
+        //     const ele = document.createElement("li");
+        //     ele.innerText = foods[i];
+        //     unorderedList.appendChild(ele);
+        // }
+
+        function createList(listElement, arr){
+            let unorderedList = document.querySelector(listElement);
+            const ele = doument.createEkement("li");
+            ele.innerText = arr[i];
             unorderedList.appendChild(ele);
         }
 
-        for (let i = 0; i < foods.length; i++) {
-            let unorderedList = document.querySelector("#foodsList");
-            const ele = document.createElement("li");
-            ele.innerText = foods[i];
-            unorderedList.appendChild(ele);
-        }
+        createList("#colorsList", colors);
+        createList("#foodsList", foods);
 
     </script>
     
