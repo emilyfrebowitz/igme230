@@ -49,10 +49,13 @@
         // }
 
         function createList(listElement, arr){
+
+            for (let i = 0; i < arr.length; i++){
             let unorderedList = document.querySelector(listElement);
             const ele = document.createElement("li");
             ele.innerText = arr[i];
             unorderedList.appendChild(ele);
+            }
         }
 
         createList("#colorsList", colors);
