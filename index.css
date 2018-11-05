@@ -97,8 +97,13 @@ svg {
     grid-row-end: span 1;
 }
 
+p {
+    font-size: 13px;
+}
+
 ul {
     list-style-type: none;
+    font-size: 13px;
 }
 
 a {
