@@ -77,17 +77,18 @@
 
     </div>
     <script>
-        let poem = "mypoem.txt"
-        let verse = ("verse1.txt")  // sets default verse element
-        let verseString = (poem + " #" + verse); 
-$("#verse-choose").val(verseString); // changes menu option to default
-$("#selectedverse").load(verse);   // retrieves only default element
-   
-$("#verse-choose").change(function() {
-    verse = $(this).val();
-    $("#selectedverse").load(verseString);
-    (poem + " #" + verse);  
-});
+        let poem = "mypoem.txt";
+        let verse = ("verse1")  // sets default verse element
+        let verseString = (poem + " #" + verse);
+
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verseString);   // retrieves only default element
+
+        $("#verse-choose").change(function() {
+            verse = $(this).val();
+            verseString = (poem + " #" + verse);
+            $("#selectedverse").load(verseString); 
+        });
    
     </script>
 </body>
