@@ -99,7 +99,7 @@ footer {
         min-height: 100vh;
         margin: 0 auto; 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 75px 30px; auto 50px;
+        grid-template-rows: 75px 30px auto 50px;
         grid-template-areas:
             "header header"
             "article nav"
