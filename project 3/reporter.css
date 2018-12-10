@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+/*2 column grid*/
 #wrapper {
     display: grid;
     width: 90vw;
@@ -53,7 +53,7 @@ a {
     margin-top: 50px;
 
 }
-
+/*hover state*/
 a:link, a:visited {
     color: black;
     text-decoration: none;
@@ -86,7 +86,7 @@ footer {
     padding-top: 50px;
     overflow: visible;
 }
-
+/*hoverstate for main page highlight*/
 .content:hover > div {
     opacity: 0.5;
     -webkit-transition: all .5s ease-in-out;
@@ -136,7 +136,7 @@ footer {
       max-width: 40vw;
   }
 
-
+/*would-ne mousetrail*/
   /* .trail { 
     position: absolute;
     height: 6px; width: 6px;
@@ -144,9 +144,9 @@ footer {
     background: teal;
   } */
 
-
+/*media query for iphone5*/
 @media only screen and (max-width: 320px) {
-
+/*single column grid for mobile*/
     #wrapper {
         width: 95vw;
         max-height:100vh;
@@ -178,7 +178,7 @@ footer {
     }
 
 
-
+/*hamburger menu functionality*/
     .menu {
         background-image: url('burg.png');
         background-size: cover;
