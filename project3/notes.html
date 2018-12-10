@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="notes.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+    <title>Emily Frebowitz | Portfolio</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Emily Frebowitz</a></h1>
+        </header>
+
+        <nav>
+            <div class="menu" onclick="hamburger(this)">
+                <div class="close"></div>
+                <ul class="menuitem">
+                        <a href="notes.html"><li>Notes</li></a>
+                        <a href="resume.html"><li>Resume</li></a>
+                        <a href="about.html"><li>About</li></a>
+                    <a href="index.html"><li>Gallery</li></a>
+                    
+                    
+                    
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <h2>Sources</h2>
+            <p><a href="https://codepen.io/larrygeams/pen/dBDLh">Image Scale on Hover by Larry Geams Parangan</a></p>
+            <p><a href="https://codepen.io/erikterwan/pen/EVzeRP">Pure CSS Hamburger fold-out menu by Erik Terwan</a></p>
+            <p><a href="https://fonts.google.com/specimen/Raleway">Raleway Font by Google Fonts</a></p>
+            <p><a href="https://www.w3schools.com/tags/att_img_align.asp">w3 Schools</a></p>
+            <p><a href="https://flaviocopes.com/css-grid/">Flavioscopes</a></p>
+            <p><a href="https://codepen.io/falldowngoboone/pen/PwzPYv">Javascript Mouse Trail</a></p>
+        <h2>Design Decisions</h2>
+        <p>To fix the menu, I decided to make a menu that was horizontal on desktop and drop down on mobile.  To make a drop down menu I used javascript.  I also added more interactivity and hover effects on the main page for the viewer to connect with while navigating.</p>
+        <h2>Goals/Audience</h2>
+        <p>The users of the site would be professionals looking to hire students, and therefore my goal would be to impress someone already in the field of design. </p>
+        <h2>Wireframes</h2>
+        <img src="wf1.png">
+        <img src="wf2.png">
+        <h2>What Changed</h2>
+        <p>The menu was fixed, more detail was put into the portfolio pages themselves, more interactivity was added on the main page, fixes in CSS were fixed such as max-width, overall personalization of the site was enhanced.</p>
+        <h2>Extra</h2>
+        <p>For this project I attempted to have a funky javascript mousetrail, however when the trail is on it does not allow the user to click on links, and so the functionality is currently turned off and commented out.</p>
+    </main>
+    <footer>
+            <div class="copyright">
+                <p>Copyright &#169; Emily Frebowitz 2018</p>
+                <p>For an IGME230 Class Project</p>
+            </div>
+            <div class="avatar">
+                <img src="me2.png">
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function hamburger(X) {
+        X.classList.toggle("change");
+    }
+//     var dots = [],
+//     mouse = {
+//       x: 0,
+//       y: 0
+//     };
+
+// // The Dot object used to scaffold the dots
+// var Dot = function() {
+//   this.x = 0;
+//   this.y = 0;
+//   this.node = (function(){
+//     var n = document.createElement("div");
+//     n.className = "trail";
+//     document.body.appendChild(n);
+//     return n;
+//   }());
+// };
+// // The Dot.prototype.draw() method sets the position of 
+//   // the object's <div> node
+// Dot.prototype.draw = function() {
+//   this.node.style.left = this.x + "px";
+//   this.node.style.top = this.y + "px";
+// };
+
+// // Creates the Dot objects, populates the dots array
+// for (var i = 0; i < 12; i++) {
+//   var d = new Dot();
+//   dots.push(d);
+// }
+
+// // This is the screen redraw function
+// function draw() {
+//   // Make sure the mouse position is set everytime
+//     // draw() is called.
+//   var x = mouse.x,
+//       y = mouse.y;
+  
+//   // This loop is where all the 90s magic happens
+//   dots.forEach(function(dot, index, dots) {
+//     var nextDot = dots[index + 1] || dots[0];
+    
+//     dot.x = x;
+//     dot.y = y;
+//     dot.draw();
+//     x += (nextDot.x - dot.x) * .6;
+//     y += (nextDot.y - dot.y) * .6;
+
+//   });
+// }
+
+// addEventListener("mousemove", function(event) {
+//   //event.preventDefault();
+//   mouse.x = event.pageX;
+//   mouse.y = event.pageY;
+// });
+
+// // animate() calls draw() then recursively calls itself
+//   // everytime the screen repaints via requestAnimationFrame().
+// function animate() {
+//   draw();
+//   requestAnimationFrame(animate);
+// }
+
+// // And get it started by calling animate().
+// animate();
+
+</script>
