@@ -4,132 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="notes.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <title>Emily Frebowitz | Portfolio</title>
+    <link rel="stylesheet" href="notes.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1><a href="index.html">Emily Frebowitz</a></h1>
-        </header>
-
-        <nav>
-            <div class="menu" onclick="hamburger(this)">
-                <div class="close"></div>
-                <ul class="menuitem">
-                        <a href="notes.html"><li>Notes</li></a>
-                        <a href="resume.html"><li>Resume</li></a>
-                        <a href="about.html"><li>About</li></a>
+    
+    <header>
+        <h1><a href="index.html">EMILY FREBOWITZ</a></h1>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
                     <a href="index.html"><li>Gallery</li></a>
-                    
-                    
-                    
+                    <a href="about.html"><li>About</li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="notes.html"><li>Notes</li></a>
                 </ul>
-            </div>
-        </nav>
+             </div>
+            </nav>
+        </header>
     <main>
         <h2>Sources</h2>
-            <p><a href="https://codepen.io/larrygeams/pen/dBDLh">Image Scale on Hover by Larry Geams Parangan</a></p>
-            <p><a href="https://codepen.io/erikterwan/pen/EVzeRP">Pure CSS Hamburger fold-out menu by Erik Terwan</a></p>
-            <p><a href="https://fonts.google.com/specimen/Raleway">Raleway Font by Google Fonts</a></p>
-            <p><a href="https://www.w3schools.com/tags/att_img_align.asp">w3 Schools</a></p>
-            <p><a href="https://flaviocopes.com/css-grid/">Flavioscopes</a></p>
-            <p><a href="https://codepen.io/falldowngoboone/pen/PwzPYv">Javascript Mouse Trail</a></p>
-        <h2>Design Decisions</h2>
-        <p>To fix the menu, I decided to make a menu that was horizontal on desktop and drop down on mobile.  To make a drop down menu I used javascript.  I also added more interactivity and hover effects on the main page for the viewer to connect with while navigating.</p>
-        <h2>Goals/Audience</h2>
-        <p>The users of the site would be professionals looking to hire students, and therefore my goal would be to impress someone already in the field of design. </p>
-        <h2>Wireframes</h2>
-        <img src="wf1.png">
-        <img src="wf2.png">
-        <h2>What Changed</h2>
-        <p>The menu was fixed, more detail was put into the portfolio pages themselves, more interactivity was added on the main page, fixes in CSS were fixed such as max-width, overall personalization of the site was enhanced.</p>
+        <ul>
+            <li><a href="https://codepen.io/larrygeams/pen/dBDLh">Image Scale on Hover by Larry Geams Parangan</a></li>
+            <li><a href="https://codepen.io/erikterwan/pen/EVzeRP">Pure CSS Hamburger fold-out menu by Erik Terwan</a></li>
+            <li><a href="https://fonts.google.com/specimen/Raleway">Raleway Font by Google Fonts</a></li>
+        </ul>
+        <h2>Challenges</h2>
+        <p>The biggest challenges I faced creating this portfolio were the hamburger menu and creating a printable page via CSS.  The hamburger menu was a challenge because it involved interpreting pre-written code and changing it to fit the needs of my website.  I encountered several problems in doing this, such as figuring out and learning how the transition effects worked so they could be manipulated to my needs, as well as figuring out logistics such as how large and wide to make the pop-out compared to the mobile version. </p>
+        <p>Learning the print media query was simple enough, but designing for a printable page was a new challenge in learning to rethink page layouts to fit CSS rules and guidelines.  It took a few tries to wrap my head around the concept. </p>
+        <h2>Framework</h2>
+        <p>I didn't use a full framework but instead started from scratch, but for the hamburger menu, the code was designed for mobile only, appearing from the left.  I redesigned the code in order to suit both mobile and desktop, as well as change settings in order for the menu to appear from the right of the screen.</p>
+        <p>For the the image scale, I wanted a slight hover effect on my images, but the original code involved a much more intense hover effect as well as typography overlay.  I edited this code to fit my site better, as a typography overlay was not needed and the original effect was too intense for my minimalist theme.</p>
         <h2>Extra</h2>
-        <p>For this project I attempted to have a funky javascript mousetrail, however when the trail is on it does not allow the user to click on links, and so the functionality is currently turned off and commented out.</p>
+        <p>I decided to take advantage and learn some transitions in CSS during this project, specifically for hover effects. I played around with the way different eases and length of transitions effected the feel and the experience of using a website. I learned that subtle, elegant transitions are the most effective in creating a smooth site, and even a minimalist themed website can benefit from soft easing transitions throughout the experience.</p>
     </main>
     <footer>
-            <div class="copyright">
-                <p>Copyright &#169; Emily Frebowitz 2018</p>
-                <p>For an IGME230 Class Project</p>
-            </div>
-            <div class="avatar">
-                <img src="me2.png">
-            </div>
-        </footer>
-    </div>
-</div>
+        <div id="copyright">
+            <p>Copyright &#169; Emily Frebowitz 2018</p>
+            <p>For an IGME230 Class Project</p>
+        </div>
+        <div id="avatar">
+            <img src="me2.png">
+        </div>
+    </footer>
+
 </body>
 </html>
-
-<script type="text/javascript">
-    function hamburger(X) {
-        X.classList.toggle("change");
-    }
-//     var dots = [],
-//     mouse = {
-//       x: 0,
-//       y: 0
-//     };
-
-// // The Dot object used to scaffold the dots
-// var Dot = function() {
-//   this.x = 0;
-//   this.y = 0;
-//   this.node = (function(){
-//     var n = document.createElement("div");
-//     n.className = "trail";
-//     document.body.appendChild(n);
-//     return n;
-//   }());
-// };
-// // The Dot.prototype.draw() method sets the position of 
-//   // the object's <div> node
-// Dot.prototype.draw = function() {
-//   this.node.style.left = this.x + "px";
-//   this.node.style.top = this.y + "px";
-// };
-
-// // Creates the Dot objects, populates the dots array
-// for (var i = 0; i < 12; i++) {
-//   var d = new Dot();
-//   dots.push(d);
-// }
-
-// // This is the screen redraw function
-// function draw() {
-//   // Make sure the mouse position is set everytime
-//     // draw() is called.
-//   var x = mouse.x,
-//       y = mouse.y;
-  
-//   // This loop is where all the 90s magic happens
-//   dots.forEach(function(dot, index, dots) {
-//     var nextDot = dots[index + 1] || dots[0];
-    
-//     dot.x = x;
-//     dot.y = y;
-//     dot.draw();
-//     x += (nextDot.x - dot.x) * .6;
-//     y += (nextDot.y - dot.y) * .6;
-
-//   });
-// }
-
-// addEventListener("mousemove", function(event) {
-//   //event.preventDefault();
-//   mouse.x = event.pageX;
-//   mouse.y = event.pageY;
-// });
-
-// // animate() calls draw() then recursively calls itself
-//   // everytime the screen repaints via requestAnimationFrame().
-// function animate() {
-//   draw();
-//   requestAnimationFrame(animate);
-// }
-
-// // And get it started by calling animate().
-// animate();
-
-</script>

@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resume.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
     <title>Emily Frebowitz | Portfolio</title>
+    <link rel="stylesheet" href="resume.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <h1><a href="index.html">Emily Frebowitz</a></h1>
-        </header>
-
-        <nav>
-            <div class="menu" onclick="hamburger(this)">
-                <div class="close"></div>
-                <ul class="menuitem">
-                        <a href="notes.html"><li>Notes</li></a>
-                        <a href="resume.html"><li>Resume</li></a>
-                        <a href="about.html"><li>About</li></a>
+    
+    <header>
+        <h1><a href="index.html">EMILY FREBOWITZ</a></h1>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
                     <a href="index.html"><li>Gallery</li></a>
-                    
-                    
-                    
+                    <a href="about.html"><li>About</li></a>
+                    <a href="resume.html"><li>Resume</li></a>
+                    <a href="notes.html"><li>Notes</li></a>
                 </ul>
-            </div>
-        </nav>
-        <main>
-        <div class="first">
+             </div>
+            </nav>
+        </header>
+    <main>
+        <section class="first">
         <h2>EMILY FREBOWITZ</h2>
         <h3>INTERACTION DESIGNER</h3>
 
@@ -71,15 +70,15 @@
                         in maintaining organization and productivity on-site
                         for live broadcasting and production.</p>
          </div>
-        </div>
+        </section>
         
-        <div class="second">
+        <section class="second">
 
-                <div id="info">
+                <section class=info>
                         <p><span class="bold">emilyfrebowitz.com</span></p>
                         <p>emily.frebowitz@gmail.com</p>
                         <p>267 690 2331</p>
-                </div>
+                    </section>
 
 
          <h4>EDUCATION</h4>
@@ -137,94 +136,22 @@
                         <li>Motion Graphics</li>
                     </ul>
                 </div>
+                </section>
             </div>
-            
+
+
 
 
     </main>
-    
     <footer>
-            <div class="copyright">
-                <p>Copyright &#169; Emily Frebowitz 2018</p>
-                <p>For an IGME230 Class Project</p>
-            </div>
-            <div class="avatar">
-                <img src="me2.png">
-            </div>
-        </footer>
-    </div>
-</div>
+        <div id="copyright">
+            <p>Copyright &#169; Emily Frebowitz 2018</p>
+            <p>For an IGME230 Class Project</p>
+        </div>
+        <div id="avatar">
+            <img src="me2.png">
+        </div>
+    </footer>
+
 </body>
 </html>
-//javascript toggle for hamburger menu
-<script type="text/javascript">
-    function hamburger(X) {
-        X.classList.toggle("change");
-    }
-//     var dots = [],
-//     mouse = {
-//       x: 0,
-//       y: 0
-//     };
-
-// // The Dot object used to scaffold the dots
-// var Dot = function() {
-//   this.x = 0;
-//   this.y = 0;
-//   this.node = (function(){
-//     var n = document.createElement("div");
-//     n.className = "trail";
-//     document.body.appendChild(n);
-//     return n;
-//   }());
-// };
-// // The Dot.prototype.draw() method sets the position of 
-//   // the object's <div> node
-// Dot.prototype.draw = function() {
-//   this.node.style.left = this.x + "px";
-//   this.node.style.top = this.y + "px";
-// };
-
-// // Creates the Dot objects, populates the dots array
-// for (var i = 0; i < 12; i++) {
-//   var d = new Dot();
-//   dots.push(d);
-// }
-
-// // This is the screen redraw function
-// function draw() {
-//   // Make sure the mouse position is set everytime
-//     // draw() is called.
-//   var x = mouse.x,
-//       y = mouse.y;
-  
-//   // This loop is where all the 90s magic happens
-//   dots.forEach(function(dot, index, dots) {
-//     var nextDot = dots[index + 1] || dots[0];
-    
-//     dot.x = x;
-//     dot.y = y;
-//     dot.draw();
-//     x += (nextDot.x - dot.x) * .6;
-//     y += (nextDot.y - dot.y) * .6;
-
-//   });
-// }
-
-// addEventListener("mousemove", function(event) {
-//   //event.preventDefault();
-//   mouse.x = event.pageX;
-//   mouse.y = event.pageY;
-// });
-
-// // animate() calls draw() then recursively calls itself
-//   // everytime the screen repaints via requestAnimationFrame().
-// function animate() {
-//   draw();
-//   requestAnimationFrame(animate);
-// }
-
-// // And get it started by calling animate().
-// animate();
-
-</script>
