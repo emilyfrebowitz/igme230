@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+/*wraps the grid with 3 columns for desktop*/
 #wrapper {
     display: grid;
     width: 90vw;
@@ -30,7 +30,7 @@ h1 {
     float: left;
     margin-top: 0;
 }
-
+/*navigation horizontal on desktop*/
 nav {
     grid-area: nav;
 }
@@ -53,7 +53,7 @@ a {
     margin-top: 50px;
 
 }
-
+/*links lighten on hover*/
 a:link, a:visited {
     color: black;
     text-decoration: none;
@@ -86,7 +86,7 @@ footer {
     padding-top: 50px;
     overflow: visible;
 }
-
+/*highlights only hovered content*/
 .content:hover > div {
     opacity: 0.5;
     -webkit-transition: all .5s ease-in-out;
@@ -137,7 +137,7 @@ footer {
       padding: 100px;
   }
 
-
+/*would-be mousetrail*/
   /* .trail { 
     position: absolute;
     height: 6px; width: 6px;
@@ -145,7 +145,7 @@ footer {
     background: teal;
   } */
 
-
+/*mobile media query for iphone 5*/
 @media only screen and (max-width: 320px) {
 
     #wrapper {
@@ -168,7 +168,7 @@ footer {
         margin-top: 20px;
         margin-left: 20px;
     }
-
+/*single column grid for mobile*/
     main {
         -webkit-columns: 100px 1; /* Chrome, Safari, Opera */
         -moz-columns: 100px 1; /* Firefox */
@@ -179,7 +179,7 @@ footer {
     }
 
 
-
+/*drop down hamburger menu for mobile*/
     .menu {
         background-image: url('burg.png');
         background-size: cover;
