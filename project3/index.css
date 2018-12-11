@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+/*wrapper for grid layout*/
 #wrapper {
     display: grid;
     width: 90vw;
@@ -65,7 +65,7 @@ main {
     position: relative;
 }
 
-
+/*text comes down on hover*/
 .drop {
         position: absolute; 
         bottom: -20; 
@@ -86,7 +86,7 @@ main {
 figure {
     margin: 0;
 }
-
+/*fade hover effect transforms*/
 figure img{
     border-radius: 10px;
     display: block;
@@ -103,7 +103,7 @@ figure img{
     -webkit-transform: scale3d(1.05, 1.05, 1);
             transform: scale3d(1.05, 1.05, 1);
   }
-
+/*projects in flex layout*/
 .content {
     display:flex;
     justify-content: space-evenly;
@@ -150,7 +150,7 @@ a:hover {
     margin-right: auto;
     width: 50%;
 }
-
+/*creates hover effect in order to fade all projects except one being hovered onto*/
 .content:hover > div {
     opacity: 0.5;
     -webkit-transition: all .5s ease-in-out;
@@ -166,7 +166,7 @@ a:hover {
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   }
-
+/* would-be mousetrail*/
   /* .trail { 
     position: absolute;
     height: 6px; width: 6px;
@@ -174,7 +174,7 @@ a:hover {
     background: teal;
   } */
 
-
+/* iphone 5 media query*/
 @media only screen and (max-width: 320px) {
 
     #wrapper {
@@ -206,7 +206,7 @@ a:hover {
     }
 
 
-
+/*creates hamburger menu with javascript*/
     .menu {
         background-image: url('burg.png');
         background-size: cover;
