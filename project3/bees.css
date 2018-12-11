@@ -180,6 +180,35 @@ footer {
         margin-left:auto;
     }
 
+    .intro {
+        max-width: 100vw;
+    }
+    h3 {
+        font-size: 100px;
+        min-width: 100vw;
+        max-width: 100vw;
+        display: block;
+    }
+  
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+  
+    .graphic {
+        max-width: 70vw;
+        align-content: center;
+        padding: 20px;
+    }
+  
+    .facts {
+        padding: 100px;
+    }
+  
+    .synopsis {
+        max-width: 40vw;
+    }
+
 
 /*hamburger menu with javascript*/
     .menu {
