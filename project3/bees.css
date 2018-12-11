@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+/*wrapper for grid layout*/
 #wrapper {
     display: grid;
     width: 90vw;
@@ -137,7 +137,7 @@ footer {
   .synopsis {
       max-width: 40vw;
   }
-
+/*would-be mouse-trail*/
 /* 
   .trail { 
     position: absolute;
@@ -147,7 +147,7 @@ footer {
   } */
 
 
-
+/*iphone5 media query*/
 @media only screen and (max-width: 320px) {
 
     #wrapper {
@@ -181,7 +181,7 @@ footer {
     }
 
 
-
+/*hamburger menu with javascript*/
     .menu {
         background-image: url('burg.png');
         background-size: cover;

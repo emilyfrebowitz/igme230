@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-
+/*wrapper for grid layout*/
 #wrapper {
     display: grid;
     width: 90vw;
@@ -129,7 +129,7 @@ main {
 #bio h3 {
     font-size: 10px;
 }
-
+/*creates contact input form*/
 form {
     margin: 0;
     width: 400px;
@@ -188,14 +188,14 @@ form {
     width: 50%;
 }
 
-
+/*would-be mousetrail*/
     /* position: absolute;
     height: 6px; width: 6px;
     border-radius: 3px;
     background: teal;
   } */ 
 
-
+/*media query for iphone5*/
 @media only screen and (max-width: 320px) {
 
     #wrapper {
@@ -242,7 +242,7 @@ form {
       }
 
 
-
+/*hamburger menu with javascript*/
     .menu {
         background-image: url('burg.png');
         background-size: cover;
