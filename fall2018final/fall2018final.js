@@ -1,23 +1,18 @@
-$(document).ready(function() {
-    $(".items").hide()
-});
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 
-$(".menu").click(function() {
+//can only be a div or class of div!! needs to be a parent of what is being called, not a sibling
+$("nav div").click(function() {
     $(this).find(".items").slideToggle();
-        
 });
 
-// let selection = ("article0.txt")
-// //$("#choose-content").val(selection); // changes menu option to the default
-// $("article").load(selection); //retrieves only the default element
+
+let selection = ("article0.txt"); //sets default content that will be displayed
+$("form").val(selection); // changes menu option to the default
+$("article").load(selection); //retrieves only the default element
 
 
-// $('input[type=radio][name=article]').change(function() {
-//     if (this.value == 'article1.txt) {
-//         alert("article1.txt");
-//     }
-//     else if (this.value == 'article2.txt') {
-//         alert("article2.txt");
-//     }
-// });
+$('input[type=radio][name=article]').change(function() {
+    selection = $(this).val();
+    $("article").load(selection);
+});
 

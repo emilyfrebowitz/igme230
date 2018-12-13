@@ -36,7 +36,7 @@ Your Formatting
 ***************/
 #yourgrid {
     grid-template-columns: 100%;
-    grid-template-rows: 75px 30px auto auto 30px;
+    grid-template-rows: 75px 30px 1fr 1fr 30px;
     grid-template-areas:
         "header"
         "nav"
@@ -45,18 +45,27 @@ Your Formatting
         "footer";
 }
 
+header, nav, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 header {
     grid-area: header;
     background: lightpink;
-    display: flex;
-    justify-content: center;
 }
 
 nav {
     grid-area: nav;
     background: lavenderblush;
-    display: flex;
-    justify-content: center;
+}
+
+nav div {
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
 }
 
 article{
@@ -72,22 +81,23 @@ aside {
 footer {
     grid-area: footer;
     background: lightpink;
-    display: flex;
-    justify-content: center;
 }
 
 .menu {
-    padding:0;
+    width: 6rem;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
     background: #ccc;
 }
 
-.menu li {
+.items {
+    position: absolute;
+    width: 6rem;
     background: #ddd;
+    margin: 0;
+    padding: 0;
     padding-left: .25rem;
     list-style: none;
+    display: none;
 }
 
 @media only screen and (min-width: 600px) {
@@ -99,12 +109,11 @@ footer {
         min-height: 100vh;
         margin: 0 auto; 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 75px 30px auto 50px;
+        grid-template-rows: 75px 30px 1fr 50px;
         grid-template-areas:
             "header header"
             "article nav"
             "article aside"
             "footer footer";
     }
-
-    
+}
