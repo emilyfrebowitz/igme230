@@ -7,11 +7,13 @@ $("nav div").click(function() {
 
 /*content loading*/
 let selection = ("story0.txt") // sets default content to be displayed
-$("#div[id]").click(function () {
-    $(this).attr("id");
-});
 $("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
+
+$("li[id]").change(function() {
+    selection = $(this).attr("id");
+    $("#stories").load(selection);
+});
 
 
 /*click counter*/
