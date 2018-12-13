@@ -34,6 +34,13 @@ aside {
 /**************
 Your Formatting
 ***************/
+/* 
+NOTES
+Css grid reference- https://css-tricks.com/snippets/css/complete-guide-grid/
+Flexbox reference - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+J Query reference - src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+ */
+
 #yourgrid {
     grid-template-columns: 100%;
     grid-template-rows: 75px 30px 1fr 1fr 30px;
