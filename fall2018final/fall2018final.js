@@ -16,8 +16,10 @@ $('input[type=radio][name=article]').change(function() {
     $("article").load(selection);
 });
 
-var count = 0;
+var clicks = 0;
+$("#count").text(clicks); //turns integer into string and displays
 
-$("#clickme").click(function() {
-    count++;
+$("#clickme").click(function(){
+    clicks++;
+    $("#count").text(clicks);
 });
