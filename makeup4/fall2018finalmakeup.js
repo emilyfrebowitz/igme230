@@ -10,5 +10,5 @@ let selection = ("story0.txt") // sets default content to be displayed
 $("#stories li").on('click', function () {
     $(this).id;
 });
-// $("#stories").val(selection); // changes menu option to the default
+$("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
