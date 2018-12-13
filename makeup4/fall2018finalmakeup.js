@@ -10,9 +10,9 @@ let selection = ("story0.txt") // sets default content to be displayed
 $("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
 
-$("#stories").change(function() {
-    selection = $(this).attr("id");
-    $("#story").load(selection);
+$('li=[id]').change(function() {
+    selection = $(this).attr();
+    $("id").load(selection);
 });
 
 
