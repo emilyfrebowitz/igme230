@@ -11,7 +11,7 @@ $("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
 
 $("#stories").change(function() {
-    selection = $(this).attr("id");
+    selection = $(this).attr("li[id]");
     $("#story").load(selection);
 });
 
