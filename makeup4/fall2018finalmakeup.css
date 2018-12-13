@@ -97,7 +97,7 @@ footer {
     display: none;
 }
 
-.submenu:hover {
+.submenu li:hover {
     background: lightpink;
     color: magenta;
     cursor: pointer;
