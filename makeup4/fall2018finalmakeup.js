@@ -25,7 +25,7 @@ $('#stories').change(function() {
 
 /*css changes*/
 
-$("li.id").click(function() {
-    $("#source").css("background", "id");
+$("#colors").click(function() {
+    $("#source").css("background-color", "id");
 });
 
