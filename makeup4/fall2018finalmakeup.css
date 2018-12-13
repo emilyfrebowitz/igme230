@@ -57,7 +57,7 @@ Your Formatting
         "footer";
 }
 
-header, footer {
+header, footer, #extracredit{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +80,7 @@ header {
 
 #extracredit {
     grid-area: extracredit;
+    flex-direction: column;
 }
 
 nav {

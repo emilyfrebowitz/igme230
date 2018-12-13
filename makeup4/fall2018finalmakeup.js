@@ -10,7 +10,7 @@ let selection = ("story0.txt") // sets default content to be displayed
 $("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
 
-$("li[id]").change(function() {
+$("#stories").change(function() {
     selection = $(this).attr("id");
     $("#story").load(selection);
 });
@@ -18,7 +18,7 @@ $("li[id]").change(function() {
 
 /*css changes*/
 
-$(".sources").click(function() {
+$("#sources").click(function() {
     $("li").css("background", "id");
 });
 
