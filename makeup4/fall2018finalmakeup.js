@@ -18,8 +18,8 @@ $('li=[id]').change(function() {
 
 /*css changes*/
 
-$("#sources").click(function() {
-    $("li").css("background", "id");
+$("li=[id]").click(function() {
+    $("#source").css("background", "id");
 });
 
 /*click counter*/
