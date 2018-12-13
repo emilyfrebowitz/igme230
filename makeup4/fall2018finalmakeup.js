@@ -7,8 +7,8 @@ $("nav div").click(function() {
 
 /*content loading*/
 let selection = ("story0.txt") // sets default content to be displayed
-$("#stories").click(function () {
-    let storyopt = $(this).attr('id');
+$("#div[id]").click(function () {
+    $(this).("div[id]")
 });
 $("#stories").val(selection); // changes menu option to the default
 $("#story").load(selection); //retrieves only the default element
