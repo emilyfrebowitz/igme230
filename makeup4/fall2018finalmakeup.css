@@ -1,0 +1,121 @@
+/*****************
+General Formatting
+******************/
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section, header, footer {
+    padding: .5rem;
+}
+
+.menu {
+    width: 100%;
+    padding: .5rem;
+    background-color: #aaa;
+    margin: 1px;
+}
+
+.submenu {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    padding-left: .5rem;
+}
+
+/**************
+Your Formatting
+***************/
+
+#pagegrid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto auto auto auto 30px;
+    grid-template-areas:
+        "header"
+        "story"
+        "source"
+        "extracredit"
+        "nav"
+        "footer";
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    background: lightblue;
+}
+
+#story {
+    grid-area: story;
+    background: lightcyan;
+}
+
+#source {
+    grid-area: source;
+    background: lightsalmon;
+}
+
+#extracredit {
+    grid-area: extracredit;
+}
+
+nav {
+    grid-area: nav;
+    background: lavenderblush;
+}
+
+footer {
+    grid-area: footer;
+    background: lightblue;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu:hover {
+    background: lightpink;
+    color: magenta;
+    cursor: pointer;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #pagegrid {
+        width: 95vw;
+        max-width: 1100px;
+        min-height: 100vh;
+        margin: 0 auto; 
+        grid-template-columns: 200px 2fr 1fr;
+        grid-template-rows: 80px 1fr 1fr 30px;
+        grid-template-areas:
+            "header header header"
+            "nav story source"
+            "nav story extracredit"
+            "footer footer footer";
+    }
+}
