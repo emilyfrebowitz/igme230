@@ -16,3 +16,8 @@ $('input[type=radio][name=article]').change(function() {
     $("article").load(selection);
 });
 
+var count = 0;
+
+$("#clickme").click(function() {
+    count++;
+});
