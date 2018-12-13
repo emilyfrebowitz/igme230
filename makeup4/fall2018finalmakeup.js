@@ -24,8 +24,14 @@ $('#stories').change(function() {
 
 
 /*css changes*/
+let color = $( "#colors" ).attr("id");
 
-$("#colors").click(function() {
-    $("#source").css("background-color", "id");
-});
+$("#colors").change(function () { 
+    color = $(this).attr("id");  
+    console.log(color);  
+    });
+
+$("#source").click(function () { 
+    $(this).css("background-color", color);
+    });
 
